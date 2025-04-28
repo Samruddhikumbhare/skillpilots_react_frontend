@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/aboutUs/page": "app/aboutUs/page.js",
+  "/blogs/[blog]/page": "app/blogs/[blog]/page.js",
+  "/blogs/page": "app/blogs/page.js",
+  "/cookiesPolicy/page": "app/cookiesPolicy/page.js",
+  "/features/page": "app/features/page.js",
+  "/contactUs/page": "app/contactUs/page.js",
+  "/page": "app/page.js",
+  "/privacyPolicy/page": "app/privacyPolicy/page.js",
+  "/refundPolicy/page": "app/refundPolicy/page.js",
+  "/termsCondition/page": "app/termsCondition/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

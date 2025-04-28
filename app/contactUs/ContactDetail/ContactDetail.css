@@ -1,0 +1,181 @@
+.contactDetailMain {
+  width: 100%;
+  padding: 100px 80px;
+}
+
+.contactContactDetail {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 45px 30px;
+}
+
+.contactContactDetail h4 {
+  color: #291fbc;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.contactContactDetail h4:first-child {
+  margin-top: 0;
+}
+
+.contactContactDetail p {
+  font-size: 16px;
+  padding: 5px 0 0 0;
+}
+
+.contactInfo {
+  border-bottom: 1px solid rgb(218, 216, 216);
+  width: fit-content;
+  line-height: 15px;
+  font-family: serif;
+}
+
+
+
+.contactContactDetail svg {
+  color: #291fbc;
+  margin-right: 5px;
+  margin-top: -5px;
+  font-size: 20px;
+}
+
+.contactSocialDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0 10px 0;
+}
+
+.contactSocialDiv svg {
+  color: black !important;
+  font-size: 25px !important;
+  margin: 0 !important;
+}
+
+.contactSocialDiv .socialIcon {
+  color: white;
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 8px;
+  border: 1px solid rgb(134, 132, 132) !important;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.contactSocialDiv .socialIcon:hover {
+  background: rgba(174, 181, 185, 0.5) !important;
+}
+
+.contactForm {
+  padding: 0 0 0 35px;
+}
+
+.contactFormHead {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactFormHead .black {
+  color: black;
+  font-family: "__Alegreya_Sans_de81a4" !important;
+  font-style: normal !important;
+  line-height: 55px;
+}
+
+.contactFormHead .blue {
+  color: #291fbc;
+  margin-right: 10px;
+  font-family: serif;
+  font-style: italic;
+  line-height: 55px;
+}
+
+.dashedContactDetail {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px 0 15px 0;
+}
+
+.dashedContactDetail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.sendMessageBtn {
+  background: linear-gradient(to bottom, #549af5 0%, #3429cf 100%);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  width: fit-content;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 30px 0px rgba(42, 31, 188, 0.4);
+  text-decoration: none;
+}
+
+.sendMessageBtn:hover {
+  background: linear-gradient(to bottom, #488fed 0%, #2a1fbc 100%);
+}
+
+@media only screen and (max-width: 1259px) {
+  .contactFormHead {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .contactDetailMain {
+    padding: 100px 30px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .contactFormHead {
+    font-size: 35px;
+  }
+  .contactFormHead .black {
+    line-height: 45px;
+  }
+
+  .contactFormHead .blue {
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .contactForm {
+    padding: 30px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .contactDetailMain {
+    padding: 60px 10px;
+  }
+
+  .contactFormHead {
+    font-size: 25px;
+  }
+  .contactFormHead .black {
+    line-height: 30px;
+  }
+
+  .contactFormHead .blue {
+    line-height: 30px;
+  }
+}

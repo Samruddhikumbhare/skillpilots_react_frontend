@@ -1,0 +1,431 @@
+.featuresMain {
+  padding: 100px 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white ;
+}
+
+.feature {
+  float: left;
+  width: 60%;
+}
+
+.featureDescription {
+  float: left;
+  width: 40%;
+}
+
+.featureDetail {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: 0 40px 0 0;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+
+.featureDetail h6 {
+  font-weight: bolder;
+  color: black;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.featureDetail p {
+  font-size: 18px;
+}
+
+.featureDetail:hover {
+  background: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
+}
+
+.featureDetail:hover p,
+.featureDetail:hover h6 {
+  color: white;
+}
+
+.featureDetail .cleanCodeImage {
+  position: relative;
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Pseudo-element for the background image that zooms out */
+.featureDetail .cleanCodeImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/cleanCode.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-element for the background image that zooms in */
+.featureDetail .cleanCodeImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/cleanCodeLight.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  transform: scale(0); /* Start with zoomed out */
+  transition: transform 0.3s;
+}
+
+/* Apply animations on hover */
+.featureDetail:hover .cleanCodeImage::before {
+  animation: zoomOut 0.3s forwards;
+}
+
+.featureDetail:hover .cleanCodeImage::after {
+  animation: zoomIn 0.3s forwards 0.3s;
+}
+
+.featureDetail .customizableImage {
+  position: relative;
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Pseudo-element for the background image that zooms out */
+.featureDetail .customizableImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/customizable.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-element for the background image that zooms in */
+.featureDetail .customizableImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/customizable\ light.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  transform: scale(0); /* Start with zoomed out */
+  transition: transform 0.3s;
+}
+
+/* Apply animations on hover */
+.featureDetail:hover .customizableImage::before {
+  animation: zoomOut 0.3s forwards;
+}
+
+.featureDetail:hover .customizableImage::after {
+  animation: zoomIn 0.3s forwards 0.3s;
+}
+
+.featureDetail .userFriendlyImage {
+  position: relative;
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Pseudo-element for the background image that zooms out */
+.featureDetail .userFriendlyImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/user\ friendly.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-element for the background image that zooms in */
+.featureDetail .userFriendlyImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/user\ friendly\ light.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  transform: scale(0); /* Start with zoomed out */
+  transition: transform 0.3s;
+}
+
+/* Apply animations on hover */
+.featureDetail:hover .userFriendlyImage::before {
+  animation: zoomOut 0.3s forwards;
+}
+
+.featureDetail:hover .userFriendlyImage::after {
+  animation: zoomIn 0.3s forwards 0.3s;
+}
+
+.featureDetail .fullSecureImage {
+  position: relative;
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Pseudo-element for the background image that zooms out */
+.featureDetail .fullSecureImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/fully\ secured.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-element for the background image that zooms in */
+.featureDetail .fullSecureImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/feature icon/fully\ secured\ light.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  transform: scale(0); /* Start with zoomed out */
+  transition: transform 0.3s;
+}
+
+/* Apply animations on hover */
+.featureDetail:hover .fullSecureImage::before {
+  animation: zoomOut 0.3s forwards;
+}
+
+.featureDetail:hover .fullSecureImage::after {
+  animation: zoomIn 0.3s forwards 0.3s;
+}
+
+/* Define keyframes for zoom-out effect */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* Define keyframes for zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.customizable {
+  margin-top: 80px;
+}
+
+.userFriendly {
+  margin-top: -40px;
+}
+
+.fullSecure {
+  margin-top: 40px;
+}
+
+.featureHead {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureHead .black {
+  color: black;
+  font-family: "__Alegreya_Sans_de81a4" !important;
+  font-style: normal !important;
+  line-height: 55px;
+}
+
+.featureHead .blue {
+  color: #291fbc;
+  margin-right: 10px;
+  font-family: serif;
+  font-style: italic;
+  line-height: 55px;
+}
+
+.dashedFeature {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px 0 15px 0;
+}
+
+.dashedFeature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.featureDescription p {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 1259px) {
+  .featureHead {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .featuresMain {
+    padding: 100px 30px;
+  }
+
+  .featureDetail {
+    width: 43%;
+    margin: 0 5% 0 0;
+  }
+
+  .customizable {
+    margin-top: 5%;
+  }
+
+  .userFriendly {
+    margin-top: -2.5%;
+  }
+
+  .fullSecure {
+    margin-top: 2.5%;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .featureHead {
+    font-size: 35px;
+  }
+  .featureHead .black {
+    line-height: 45px;
+  }
+
+  .featureHead .blue {
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .featuresMain {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .featureDescription {
+    width: 100%;
+  }
+
+  .featureDetail {
+    width: calc(48% - 19px);
+    margin: 0 2%;
+  }
+
+  .customizable {
+    margin-top: 100px;
+  }
+
+  .userFriendly {
+    margin-top: -50px;
+  }
+
+  .fullSecure {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .featureDetail {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+  .customizable {
+    margin-top: 40px;
+  }
+
+  .userFriendly {
+    margin-top: 40px;
+  }
+
+  .fullSecure {
+    margin-top: 40px;
+    margin-bottom: 40px;;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  
+  .featuresMain {
+    padding: 60px 10px;
+  }
+
+  .featureHead {
+    font-size: 25px;
+  }
+  .featureHead .black {
+    line-height: 30px;
+  }
+
+  .featureHead .blue {
+    line-height: 30px;
+  }
+}
+

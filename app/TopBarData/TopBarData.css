@@ -1,0 +1,741 @@
+.topBarMain {
+  /* background-image: url("./images/top bg.jpg"); */
+  background: rgb(247, 247, 253);
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+.topBarData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+  margin-top: -210px;
+}
+
+.leftTopBar {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 80px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 150px;
+}
+
+.firstHead {
+  font-size: 42px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  animation: slideInTiltAndFontStyle 0.5s ease-out forwards; /* Adjust duration and timing function as needed */
+}
+
+@keyframes slideInTiltAndFontStyle {
+  0% {
+    transform: translateX(100%) skewX(-50deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+.firstHead .black {
+  color: black;
+  font-family: "__Alegreya_Sans_de81a4" !important;
+  font-style: normal !important;
+  line-height: 45px;
+}
+
+.firstHead .blue {
+  color: #291fbc;
+  margin-right: 10px;
+  font-family: serif;
+  font-style: italic;
+  line-height: 45px;
+}
+
+.dashedTop {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px 0 15px 0;
+}
+
+.dashedTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+  animation: drawLine 0.5s forwards 0.8s; /* Animation duration and fill mode */
+}
+
+@keyframes drawLine {
+  0% {
+    left: 60px; /* Start position off-screen to the left */
+  }
+  100% {
+    left: 0; /* End position at the right edge */
+  }
+}
+
+.leftTopBar p {
+  font-size: 18px;
+  padding-right: 20%;
+  opacity: 0;
+  animation: slideInTiltAndFontStyle 0.5s ease-out forwards 1.3s; /* Adjust duration and timing function as needed */
+}
+
+.topBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.topBtns .commonBtn a {
+  margin: 40px 0;
+  animation: fadeInAnimation 3s ease forwards 1.8s;
+  opacity: 0;
+}
+
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.topBtns .playBtn {
+  color: #2a1fbc;
+  padding: 5px 5px 5px 15px;
+  border-radius: 100%;
+  animation: fadeInAnimationPlayBtn 3s ease forwards 2.5s;
+  opacity: 0;
+}
+
+
+
+@keyframes fadeInAnimationPlayBtn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.topBtns .playBtn svg {
+  font-size: 55px;
+}
+
+.rightTopBar {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.rightTopBar .ovalImage {
+  animation: zoom-in 1s ease forwards 1.5s;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: translate(0px, -50px) scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+.rightTopBar .topbarImage {
+  position: absolute;
+  top: 29%;
+  left: 6%;
+  opacity: 0;
+  width: calc(100% - 6%);
+  height: 65%;
+  animation: slideInTopbarImage 1s ease-out forwards 2.5s; /* Adjust duration and timing function as needed */
+  z-index: 10;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+@keyframes slideInTopbarImage {
+  0% {
+    transform: translate3d(-150px, -50px, 0px) perspective(600px)
+      rotateX(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) perspective(1200px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.circleImage {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  animation: big-circle-slide-in 1s ease-out forwards 3.5s;
+  opacity: 0;
+  height: 22%;
+}
+
+@keyframes big-circle-slide-in {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.topbarImageRec1 {
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  opacity: 0;
+  width: calc(100% - 10%);
+  z-index: 1;
+  border-top-left-radius: 15px;
+  animation: Rec1TopbarImage 1s ease-out forwards 3.5s;
+}
+
+@keyframes Rec1TopbarImage {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.topbarImageRec2 {
+  position: absolute;
+  top: 25%;
+  left: 13%;
+  opacity: 0;
+  width: calc(100% - 13%);
+  z-index: 1;
+  border-top-left-radius: 15px;
+  animation: Rec2TopbarImage 1s ease-out forwards 4s;
+}
+
+@keyframes Rec2TopbarImage {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.whiteBigCircle {
+  background: rgba(255, 255, 255, 0.5);
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  z-index: 11;
+  border-radius: 100%;
+  opacity: 0;
+  animation: whiteBigCircleImageSlideIn 1s ease-out forwards 4s;
+}
+
+@keyframes whiteBigCircleImageSlideIn {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.mediumCircleImage {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  z-index: 11;
+  opacity: 0;
+  animation: mediumCircleImageSlideIn 0.5s ease-out forwards 4.5s;
+}
+
+@keyframes mediumCircleImageSlideIn {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.smallcircleImage {
+  position: absolute;
+  bottom: -20px;
+  left: 390px;
+  animation: small-circle-slide-in 0.5s ease-out forwards 5.1s;
+  opacity: 0;
+}
+
+@keyframes small-circle-slide-in {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.whiteBigCircle2 {
+  background: rgba(255, 255, 255, 0.5);
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 20px;
+  left: -170px;
+  z-index: 11;
+  border-radius: 100%;
+  opacity: 0;
+  animation: whiteBigCircle2ImageSlideIn 0.5s ease-out forwards 5.5s;
+}
+
+@keyframes whiteBigCircle2ImageSlideIn {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    z-index: 10;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: -1;
+  }
+}
+
+.whiteBigCircle3 {
+  background: rgba(255, 255, 255, 0.5);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -100px;
+  left: 300px;
+  z-index: 11;
+  border-radius: 100%;
+  opacity: 0;
+  animation: whiteBigCircle3ImageSlideIn 0.5s ease-out forwards 5.5s;
+}
+
+@keyframes whiteBigCircle3ImageSlideIn {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1678px) {
+  .rightTopBar .topbarImage {
+    height: 60%;
+  }
+
+  .whiteBigCircle {
+    top: 81%;
+  }
+}
+
+/* @media only screen and (max-width: 1590px) {
+  .circleImage {
+    bottom: -200px;
+  }
+} */
+
+/* @media only screen and (max-width: 1259px) {
+  .topBarData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    margin-top: -87px;
+  }
+  .leftTopBar {
+    width: 50%;
+    margin-top: 0;
+  }
+  .rightTopBar {
+    width: 50%;
+  }
+  .circleImage {
+    left: 0;
+  }
+
+  .smallcircleImage {
+    bottom: -70px;
+    left: 500px;
+  }
+
+  .rightTopBar .ovalImage {
+    height: 70%;
+  }
+
+  .rightTopBar .topbarImage {
+    height: 59%;
+    top: 22%;
+  }
+
+  .topbarImageRec1 {
+    top: 20%;
+  }
+
+  .topbarImageRec2 {
+    top: 18%;
+  }
+
+  .whiteBigCircle {
+    top: 76%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .mediumCircleImage {
+    top: calc(100% - 35px);
+  }
+
+  .firstHead {
+    font-size: 45px;
+  }
+} */
+
+/* @media only screen and (max-width: 1070px) {
+  .topBarData {
+    margin-top: -80px;
+    height: 700px;
+  }
+  .firstHead {
+    font-size: 35px;
+  }
+  .firstHead .black {
+    line-height: 45px;
+  }
+
+  .firstHead .blue {
+    line-height: 45px;
+  }
+
+  .circleImage {
+    bottom: -188px;
+    left: 0;
+  }
+
+  .smallcircleImage {
+    bottom: -50px;
+    left: 90%;
+  }
+
+  .leftTopBar p {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1017px) {
+  .circleImage {
+    bottom: -165px;
+  }
+} */
+
+@media only screen and (max-width: 1070px) {
+  .leftTopBar {
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .circleImage {
+    left: 0;
+    width: 30%;
+    height: 15%;
+  }
+
+  .leftTopBar p {
+    padding-right: 20px;
+  }
+
+  .rightTopBar .topbarImage {
+    height: 55%;
+  }
+
+  .whiteBigCircle {
+    top: 77%;
+  }
+
+  .whiteBigCircle2 {
+    left: -90px;
+    z-index: -1;
+  }
+
+  .smallcircleImage {
+    left: 60%;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .topBarData {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    height: 700px;
+  }
+  .leftTopBar {
+    width: calc(100% - 90px);
+    position: relative;
+    z-index: 20;
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+
+  .whiteBigCircle2 {
+    left: -120px;
+  }
+
+  .firstHead h1 {
+    padding-right: 30%;
+  }
+
+  .rightTopBar {
+    top: -380px;
+    width: 100%;
+  }
+
+  .leftTopBar p {
+    padding-right: 20%;
+    color: black;
+  }
+
+  .dashedTop {
+    margin: 5px 0 10px 0;
+  }
+
+  .topBtns .commonBtn a {
+    margin: 20px 0;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .topBtns .playBtn {
+    padding: 10px 10px 10px 15px;
+  }
+
+  .topBtns .playBtn svg {
+    font-size: 50px;
+  }
+
+  .whiteBigCircle3 {
+    width: 25px;
+    height: 25px;
+    top: -50px;
+    left: 60%;
+  }
+
+  .rightTopBar .ovalImage {
+    left: 40%;
+    width: 60%;
+    height: 90%;
+  }
+
+  .circleImage {
+    left: -7%;
+  }
+
+  .rightTopBar .topbarImage {
+    top: 50%;
+    left: 30%;
+    width: 70%;
+    height: 55%;
+    z-index: 10;
+  }
+
+  .topbarImageRec1 {
+    top: 48%;
+    left: 32%;
+    width: calc(100% - 32%);
+  }
+
+  .topbarImageRec2 {
+    top: 46%;
+    left: 34%;
+    width: calc(100% - 34%);
+  }
+
+  .smallcircleImage {
+    top: 550px;
+    left: 22%;
+  }
+
+  .whiteBigCircle {
+    top: 96%;
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .leftTopBar p,
+  .firstHead h1 {
+    padding-right: 5px;
+  }
+
+  .rightTopBar {
+    top: -420px;
+  }
+
+  .rightTopBar .topbarImage {
+    top: 60%;
+    left: 10%;
+    width: 90%;
+    height: 55%;
+    z-index: 10;
+  }
+
+  .topbarImageRec1 {
+    top: 58%;
+    left: 12%;
+    width: calc(100% - 12%);
+  }
+
+  .topbarImageRec2 {
+    top: 56%;
+    left: 14%;
+    width: calc(100% - 14%);
+  }
+
+  .whiteBigCircle {
+    top: 110%;
+    left: 15%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .circleImage {
+    left: -20%;
+    height: 80px;
+  }
+
+  .smallcircleImage {
+    left: 1%;
+    top: 580px;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .rightTopBar {
+    top: -440px;
+  }
+  .leftTopBar {
+    width: 95%;
+  }
+
+  .firstHead {
+    font-size: 35px;
+  }
+  .firstHead .black,
+  .firstHead .blue {
+    line-height: 38px;
+  }
+
+  .rightTopBar .topbarImage {
+    top: 64%;
+    height: 50%;
+  }
+
+  .topbarImageRec1 {
+    top: 62%;
+  }
+
+  .topbarImageRec2 {
+    top: 60%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .leftTopBar {
+    margin-left: 10px;
+  }
+
+  .rightTopBar .topbarImage {
+    height: 40%;
+    top: 68%;
+  }
+
+  .topbarImageRec1 {
+    top: 66%;
+  }
+
+  .topbarImageRec2 {
+    top: 64%;
+  }
+
+  .whiteBigCircle {
+    top: 100%;
+  }
+
+  .whiteBigCircle2 {
+    left: -70px;
+  }
+
+  .firstHead {
+    font-size: 28px;
+  }
+
+  .firstHead .black,
+  .firstHead .blue {
+    line-height: 30px;
+  }
+
+  .whiteBigCircle {
+    top: 104%;
+  }
+
+  
+}

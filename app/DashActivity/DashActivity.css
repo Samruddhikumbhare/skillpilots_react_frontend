@@ -1,0 +1,231 @@
+.dashActivityMain {
+  padding: 100px 0 100px 80px;
+  width: 100%;
+  background: #f7f7fd;
+  display: flex;
+  align-items: center;
+}
+
+.dashDetail {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
+
+.dashImg {
+  float: left;
+  width: 50%;
+}
+
+.bgDashImg {
+  /* background-image: url("../images//dashboard\ image.png");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 1px 1px 3px 6px #e9e9e9;
+}
+
+.dashHead {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashHead .black {
+  color: black;
+  font-family: "__Alegreya_Sans_de81a4" !important;
+  font-style: normal !important;
+  line-height: 55px;
+}
+
+.dashHead .blue {
+  color: #291fbc;
+  margin-right: 10px;
+  font-family: serif;
+  font-style: italic;
+  line-height: 55px;
+}
+
+.dashedDash {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px 0 15px 0;
+}
+
+.dashedDash::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.dashDetail p {
+  font-size: 17px;
+  margin: 20px 0 30px 0;
+  line-height: 24px;
+}
+
+
+
+.counting {
+  font-size: 45px;
+  font-weight: bolder;
+  color: black;
+  font-family: system-ui;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+
+.counting:first-child {
+  margin-left: 0;
+}
+
+.counting .plus {
+  color: #382ecf;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-left: 2px;
+}
+
+.countingData {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: -8px;
+}
+
+.countingMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1259px) {
+  .dashHead {
+    font-size: 45px;
+  }
+
+  .counting {
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+    font-family: system-ui;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 60px;
+  }
+
+  .counting .plus {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .dashActivityMain {
+    padding: 100px 0 100px 30px;
+  }
+
+  .dashDetail {
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .dashHead {
+    font-size: 35px;
+  }
+  .dashHead .black {
+    line-height: 45px;
+  }
+
+  .dashHead .blue {
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .dashActivityMain {
+    flex-direction: column;
+  }
+
+  .dashDetail {
+    width: 100%;
+  }
+
+  .dashImg {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .counting {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+
+  .counting .plus {
+    font-size: 35px;
+  }
+
+  .countingData {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -8px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  
+  .counting {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .counting .plus {
+    font-size: 15px;
+  }
+
+  .countingData {
+    font-size: 12px;
+    margin-top: -2px;
+  }
+
+  .dashActivityMain {
+    padding: 60px 0 60px 10px;
+  }
+
+  .dashDetail {
+    padding-right: 10px;
+  }
+
+  .dashHead {
+    font-size: 25px;
+  }
+  .dashHead .black {
+    line-height: 30px;
+  }
+
+  .dashHead .blue {
+    line-height: 30px;
+  }
+}
+

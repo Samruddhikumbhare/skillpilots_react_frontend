@@ -1,0 +1,283 @@
+.navBar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.navBar .getQuoteBtn a {
+  color: white;
+  border-radius: 5px;
+  padding: 12px 22px;
+  border: 2px solid white;
+  font-size: 16px;
+  font-weight: 550;
+  background: linear-gradient(to bottom, #488fed 0%, #2a1fbc 100%);
+  box-shadow: 0px 0px 30px 0px rgba(42, 31, 188, 0.4);
+  text-decoration: none;
+}
+
+.navBar .getQuoteBtn a:hover {
+  color: #485974;
+  background: white;
+}
+
+.navBar .getQuoteBtnMobile a {
+  color: white;
+  border-radius: 5px;
+  padding: 6px 8px;
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: 550;
+  background: linear-gradient(to bottom, #488fed 0%, #2a1fbc 100%);
+  box-shadow: 0px 0px 30px 0px rgba(42, 31, 188, 0.4);
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.navBar .getQuoteBtnMobile a:hover {
+  color: #485974;
+  background: white;
+}
+
+.navBar .getQuoteBtnR a {
+  color: white;
+  border-radius: 5px;
+  padding: 12px 22px;
+  border: 2px solid white;
+  font-size: 16px;
+  font-weight: 550;
+  background: linear-gradient(to bottom, #4fb40a 0%, #2c5403 100%);
+  box-shadow: 0px 0px 30px 0px rgba(42, 31, 188, 0.4);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navBar .getQuoteBtnR a:hover {
+  color: #485974;
+  background: white;
+}
+
+.navBar .getQuoteBtnMobileR a {
+  color: white;
+  border-radius: 5px;
+  padding: 6px 8px;
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: 550;
+  background: linear-gradient(to bottom, #4fb40a 0%, #2c5403 100%);
+  box-shadow: 0px 0px 30px 0px rgba(42, 31, 188, 0.4);
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.navBar .getQuoteBtnMobileR a:hover {
+  color: #485974;
+  background: white;
+}
+
+.navBarScroll {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0px 15px 10px -15px #9c9b9b;
+}
+
+.navBarScroll .getQuoteBtn a {
+  color: #2a1fbc;
+  border-radius: 5px;
+  padding: 12px 22px;
+  border: 2px solid #2a1fbc;
+  font-size: 16px;
+  font-weight: 550;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.navBarScroll .getQuoteBtn a:hover {
+  color: white;
+  background: #2a1fbc;
+}
+
+.navBarScroll .getQuoteBtnMobile a {
+  color: #2a1fbc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #2a1fbc;
+  font-size: 16px;
+  font-weight: 550;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.navBarScroll .getQuoteBtnMobile a:hover {
+  color: white;
+  background: #2a1fbc;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.dropbtn {
+  color: black;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  margin: 0 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative; /* Ensure positioning context for ::before */
+}
+.dropdown-content a::before {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 10px; /* Adjust to control the position of the line */
+  width: 10px; /* Adjust the width of the line */
+  height: 3px; /* Adjust the height of the line */
+  background: linear-gradient(
+    to right,
+    #488fed 0%,
+    #291fbc 100%
+  ); /* Color of the line */
+  transform: translateY(-50%);
+  transition: width 0.6s ease; /* Add smooth transition effect */
+  opacity: 0; /* Initially invisible */
+}
+
+/* Show line on hover */
+.dropdown-content a:hover::before {
+  width: 25px; /* Expand the width of the line on hover */
+  opacity: 1; /* Make the line visible on hover */
+}
+.dropdown-content a:hover {
+  color: #291fbc;
+}
+.dropdown-content a:hover span {
+  margin-left: 32px;
+  transition: margin-left 0.5s ease;
+}
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px; /* Adjust this value based on your content height */
+  transform: scaleY(1);
+}
+
+.dropdown:hover .dropbtn,
+.dropbtn:hover {
+  color: white;
+  background-color: #291fbc;
+}
+
+.dropbtnActive {
+  color: white;
+  background-color: #291fbc;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  margin: 0 15px;
+}
+
+@media only screen and (max-width: 1070px) {
+  .navBar,
+  .navBarScroll {
+    padding: 25px 15px;
+  }
+
+  .menuMain,
+  .getQuoteBtn,
+  .getQuoteBtnR {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+  .mobileMenu svg {
+    color: white;
+  }
+  .mobileMenuButton {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobileDropdown {
+    width: 100%;
+  }
+
+  .dropbtn,
+  .dropbtnActive {
+    padding: 3px 12px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navBar,
+  .navBarScroll {
+    padding: 25px 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .navBar .getQuoteBtnMobile a,
+  .navBarScroll .getQuoteBtnMobile a {
+    padding: 7px;
+    margin-right: 7px;
+  }
+}

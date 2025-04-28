@@ -1,0 +1,11 @@
+.refund ul {
+  list-style-type: disc !important;
+  margin: 5px 10px 10px 10px;
+  padding: 5px 10px 10px 10px;
+}
+
+.refund ol {
+  list-style-type: decimal !important;
+  margin: 5px 10px 10px 10px;
+  padding: 5px 10px 10px 10px;
+}

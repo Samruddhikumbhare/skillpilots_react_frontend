@@ -1,0 +1,157 @@
+.aboutMain {
+  padding: 100px 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white !;
+}
+
+.about {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.aboutDescription {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.aboutDetail {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: 0 40px 0 0;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+
+.aboutDetail h6 {
+  font-weight: bolder;
+  color: black;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.aboutDetail p {
+  font-size: 18px;
+}
+
+.aboutDetail:hover {
+  background: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
+}
+
+.aboutDetail:hover p,
+.aboutDetail:hover h6 {
+  color: white;
+}
+
+.aboutHead {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutHead .black {
+  color: black;
+  font-family: "__Alegreya_Sans_de81a4" !important;
+  font-style: normal !important;
+  line-height: 55px;
+}
+
+.aboutHead .blue {
+  color: #291fbc;
+  margin-left: 10px;
+  font-family: serif;
+  font-style: italic;
+  line-height: 55px;
+}
+
+.dashedabout {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px 0 15px 0;
+}
+
+.dashedabout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.aboutDescription p {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 1259px) {
+  .aboutHead {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .aboutMain {
+    padding: 100px 30px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .aboutHead {
+    font-size: 35px;
+  }
+  .aboutHead .black {
+    line-height: 45px;
+  }
+
+  .aboutHead .blue {
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .aboutMain {
+    flex-direction: column;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .aboutDescription {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .aboutMain {
+    padding: 60px 10px;
+  }
+
+  .aboutHead {
+    font-size: 25px;
+  }
+  .aboutHead .black {
+    line-height: 30px;
+  }
+
+  .aboutHead .blue {
+    line-height: 30px;
+  }
+}

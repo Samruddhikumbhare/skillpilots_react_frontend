@@ -1,0 +1,132 @@
+.feature2Main {
+  background: #291fbc;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  padding: 100px 80px;
+  border-bottom: 2px solid white;
+}
+
+.bgFeature2 {
+  background-image: url("../../images/common\ topbar.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100% ;
+  background-size: cover;
+  width: 100%;
+  margin: -100px -80px;
+  height: 300px;
+}
+
+.feature2Head {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  margin-top: -200px;
+}
+.dashFeature2 {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px auto;
+}
+
+.dashFeature2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.feature2Main p {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 24px;
+  padding: 0 15%;
+  text-align: center;
+}
+
+.ffeature {
+  background: rgba(62, 105, 220, 0.15);
+  padding: 30px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+
+.ffeature:hover {
+  background: rgba(62, 105, 220, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ffeature .nameData {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.ffeature .nameData .fName {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -4px;
+}
+
+.ffeature .nameData .data {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .feature2Main {
+    padding: 100px 30px;
+  }
+
+  .bgFeature2 {
+    margin: -100px -30px;
+  }
+}
+
+@media only screen and (max-width: 1259px) {
+  .feature2Head {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .feature2Head {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .feature2Main p {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .feature2Head {
+    font-size: 25px;
+  }
+
+  .feature2Main {
+    padding: 60px 10px;
+  }
+
+  .bgFeature2 {
+    margin: -60px -10px;
+  }
+}

@@ -1,0 +1,188 @@
+.feedBackMain {
+  padding: 100px 0 100px 10px;
+  width: 100%;
+  background: #f7f7fd;
+  text-align: center;
+}
+
+.feedBackMain .para {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 24px;
+  padding: 0 15%;
+  text-align: center;
+}
+
+.feedBackHead {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  word-spacing: 5px;
+}
+
+.feedBackHead .black {
+  color: black;
+  font-family: "__Alegreya_Sans_de81a4" !important;
+  font-style: normal !important;
+  line-height: 55px;
+}
+
+.feedBackHead .blue {
+  color: #291fbc;
+  margin-right: 10px;
+  font-family: serif;
+  font-style: italic;
+  line-height: 55px;
+}
+
+.dashedFeedback {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px auto;
+}
+
+.dashedFeedback::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.carouselMainFeedback {
+  padding: 50px 50px 0px 50px;
+}
+
+.carouselMainFeedback .feedBackPara {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.carouselMainFeedback .symbolFeed {
+  background: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
+  border-radius: 60px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.carouselMainFeedback .bottomShow {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid white;
+  margin-left: 30px;
+}
+
+.carouselMainFeedback .personImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 6px solid white;
+  margin-right: 15px;
+}
+
+.carouselMainFeedback .personDetail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.carouselMainFeedback .detailP {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.carouselMainFeedback .detailP .name {
+  font-weight: bolder;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.carouselMainFeedback .detailP .designation {
+  color: gray;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1259px) {
+  .feedBackHead {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .feedBackMain {
+    padding: 100px 20px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .feedBackHead {
+    font-size: 35px;
+  }
+  .feedBackHead .black {
+    line-height: 45px;
+  }
+
+  .feedBackHead .blue {
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .feedBackMain {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .carouselMainFeedback .feedBackPara {
+    height: auto;
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .feedBackMain .para {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .feedBackMain {
+    padding: 60px 20px;
+  }
+
+  .feedBackHead {
+    font-size: 25px;
+  }
+  .feedBackHead .black {
+    line-height: 30px;
+  }
+
+  .feedBackHead .blue {
+    line-height: 30px;
+  }
+}

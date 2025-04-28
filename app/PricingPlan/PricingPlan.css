@@ -1,0 +1,164 @@
+.pricingMain {
+  padding: 80px;
+  margin-top: 40%;
+  width: 100%;
+  /* background: #f7f7fd; */
+  text-align: center;
+}
+
+.pricingHead {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricingMain p {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 24px;
+  padding: 0 15%;
+  text-align: center;
+}
+
+.dashedPricing {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px auto;
+}
+
+.dashedPricing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.pricingBox{
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px 65px 10px;
+}
+
+.pricingBox .heading{
+    color: #291fbc;
+    font-weight: bolder;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.pricingBox .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: serif;
+    font-weight: bolder;
+}
+
+.pricingBox .pricing span{
+    font-size: 30px;
+}
+
+.pricingBox .pricing div{
+    font-size: 45px;
+}
+
+.pricingBox .priceDuration{
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(78, 77, 77);
+    margin-top: -12px;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+.pricingPara{
+    padding: 10px !important;
+}
+
+.pricingCheckList{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.pricingCheckList svg{
+    margin-right: 5px;
+    font-size: 18px;
+    color: #291fbc;
+}
+
+.readMorePrice{
+    background: #485974;
+    border-radius: 5px;
+    padding: 15px 30px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin: 10px 0 50px 0;
+}
+
+.readMorePrice:hover{
+    background: #2d3646;
+}
+
+@media only screen and (max-width: 1259px) {
+  .pricingHead {
+    font-size: 45px;
+  }
+  .pricingMain {
+    margin-top: 30%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .pricingMain {
+    padding: 80px 30px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .pricingHead {
+    font-size: 35px;
+  }
+
+  .pricingMain {
+    margin-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .pricingMain {
+    margin-top: 20%;
+    padding: 80px 10px;
+  }
+  .pricingMain p {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .pricingMain {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .pricingMain {
+    padding: 60px 10px;
+  }
+
+  .pricingHead {
+    font-size: 25px;
+  }
+}

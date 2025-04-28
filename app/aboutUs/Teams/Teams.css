@@ -1,0 +1,392 @@
+.teamsMain {
+  padding: 100px 50px;
+  width: 100%;
+  background: linear-gradient(#f7f7fd, white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamsMain .teamData {
+  width: 100%;
+}
+
+.teamsMain .missionMain {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.teamsMain .para {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 24px;
+  padding: 0 15%;
+  text-align: center;
+}
+
+.teamsHead {
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  word-spacing: 5px;
+}
+
+.teamsHead .black {
+  color: black;
+  font-family: "__Alegreya_Sans_de81a4" !important;
+  font-style: normal !important;
+  line-height: 55px;
+}
+
+.teamsHead .blue {
+  color: #291fbc;
+  margin-right: 10px;
+  font-family: serif;
+  font-style: italic;
+  line-height: 55px;
+}
+
+.dashedDash {
+  position: relative;
+  height: 6px; /* Adjust height as needed */
+  width: 60px; /* Width of the line */
+  overflow: hidden; /* Hide overflow */
+  margin: 10px auto;
+}
+
+.dashedDash::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, #488fed 0%, #291fbc 100%);
+}
+
+.teamsImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureDetailAbout {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 46.8%;
+  margin: 0 1.6% 20px 1.6%;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featureDetailAbout h6 {
+  font-weight: bolder;
+  color: black;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.featureDetailAbout p {
+  font-size: 16px;
+}
+
+.featureDetailAbout:hover {
+  background: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
+}
+
+.featureDetailAbout:hover p,
+.featureDetailAbout:hover h6 {
+  color: white;
+}
+
+.featureDetailAbout .responsibility {
+  position: relative;
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Pseudo-element for the background image that zooms out */
+.featureDetailAbout .responsibility::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/teams/responsibility.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-element for the background image that zooms in */
+.featureDetailAbout .responsibility::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/teams/responsibility light.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  transform: scale(0); /* Start with zoomed out */
+  transition: transform 0.3s;
+}
+
+/* Apply animations on hover */
+.featureDetailAbout:hover .responsibility::before {
+  animation: zoomOut 0.3s forwards;
+}
+
+.featureDetailAbout:hover .responsibility::after {
+  animation: zoomIn 0.3s forwards 0.3s;
+}
+
+.featureDetailAbout .approach {
+  position: relative;
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Pseudo-element for the background image that zooms out */
+.featureDetailAbout .approach::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/teams/approach.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-element for the background image that zooms in */
+.featureDetailAbout .approach::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/teams/approach light.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  transform: scale(0); /* Start with zoomed out */
+  transition: transform 0.3s;
+}
+
+/* Apply animations on hover */
+.featureDetailAbout:hover .approach::before {
+  animation: zoomOut 0.3s forwards;
+}
+
+.featureDetailAbout:hover .approach::after {
+  animation: zoomIn 0.3s forwards 0.3s;
+}
+
+.featureDetailAbout .mission {
+  position: relative;
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Pseudo-element for the background image that zooms out */
+.featureDetailAbout .mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/teams/mission.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+/* Pseudo-element for the background image that zooms in */
+.featureDetailAbout .mission::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/teams/mission light.png"); /* Replace with your zoom-in image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  transform: scale(0); /* Start with zoomed out */
+  transition: transform 0.3s;
+}
+
+/* Apply animations on hover */
+.featureDetailAbout:hover .mission::before {
+  animation: zoomOut 0.3s forwards;
+}
+
+.featureDetailAbout:hover .mission::after {
+  animation: zoomIn 0.3s forwards 0.3s;
+}
+
+/* Define keyframes for zoom-out effect */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* Define keyframes for zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.teamsMember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.teamsMember .memberName {
+  font-weight: bolder;
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+.teamsMember .designation {
+  color: #291fbc;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 80px;
+  background-color: rgb(0, 0, 0, 0.7);
+  width: calc(100% - 40px);
+  height: calc(100% - 100px);
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.memberLink {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.memberLink .socialIcon {
+  padding: 1px 5px 2px 5px !important;
+}
+
+.teamsImage:hover .overlay {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1259px) {
+  .teamsHead {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .teamsMain {
+    padding: 100px 20px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .teamsHead {
+    font-size: 35px;
+  }
+  .teamsHead .black {
+    line-height: 45px;
+  }
+
+  .teamsHead .blue {
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .featureDetailAbout {
+    width: 100%;
+    margin: 10px 0;
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .teamsMain .para {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .teamsMain {
+    padding: 60px 20px;
+  }
+
+  .teamsHead {
+    font-size: 25px;
+  }
+  .teamsHead .black {
+    line-height: 30px;
+  }
+
+  .teamsHead .blue {
+    line-height: 30px;
+  }
+}

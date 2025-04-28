@@ -1,0 +1,205 @@
+.footerClass {
+  background: linear-gradient(-84deg, #1f53bc 0%, #291fbc 100%);
+  color: white;
+  padding: 30px 30px 50px 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerMain {
+  width: 100%;
+}
+
+.logoData {
+  float: left;
+  width: 30%;
+  padding: 2%;
+  margin-top: 25px;
+  height: fit-content;
+}
+
+.logoData p {
+  padding: 20px 0 5px 5px;
+}
+
+.footerMain .storeImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footerMain .storeImg img {
+  width: auto;
+  height: 35px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.footerMain .storeImg img:hover {
+  box-shadow: 1px 1px 5px 2px #012c4b;
+}
+
+.footerMain .pagesLink {
+  float: left;
+  width: 20%;
+  padding: 2%;
+  margin-top: 25px;
+  height: fit-content;
+}
+
+.footerMain .contact {
+  float: left;
+  width: 30%;
+  padding: 2%;
+  margin-top: 25px;
+  height: fit-content;
+}
+
+.footerMain .pagesLink ul {
+  padding-left: 0;
+}
+
+.footerMain .pagesLink ul li {
+  padding: 2px 0;
+}
+
+.footerMain .pagesLink ul li a {
+  color: rgb(223, 222, 222);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footerMain .pagesLink ul li svg {
+  font-size: 14px;
+}
+
+.footerMain .pagesLink ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.footerMain .dashedFooter {
+  position: relative;
+  height: 2px;
+  /* Adjust height as needed */
+  width: 50px;
+  /* Width of the line */
+  overflow: hidden;
+  /* Hide overflow */
+  margin: 10px 0 15px 0;
+}
+
+.footerMain .dashedFooter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  /* Start off-screen to the right */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: white;
+}
+
+.footerClass .footerLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 8px 0;
+}
+
+.footerLink a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerLink a:hover {
+  color: rgb(163, 186, 219);
+}
+
+.footerLink .socialDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+
+.joinBtn a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 15px;
+  background: transparent;
+  border-radius: 6px;
+}
+
+.joinBtn a:hover {
+  background: white;
+  color: #291fbc;
+}
+
+@media only screen and (max-width: 1160px) {
+  .footerMain {
+    padding: 5px;
+  }
+
+  .logoData,
+  .footerMain .pagesLink,
+  .footerMain .contact {
+    padding: 1%;
+  }
+
+
+}
+
+@media only screen and (max-width: 950px) {
+  .logoData {
+    float: left;
+    width: 50%;
+    padding: 2%;
+  }
+
+  .footerMain .pagesLink {
+    float: left;
+    width: 25%;
+    padding: 2%;
+  }
+
+  .footerMain .contact {
+    float: left;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .footerClass {
+    padding: 10px 10px 25px 10px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .logoData {
+    float: left;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .footerMain .pagesLink,
+  .footerMain .contact {
+    float: left;
+    width: 100%;
+    padding: 2%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .footerClass .footerLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}

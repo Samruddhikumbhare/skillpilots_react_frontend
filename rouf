@@ -1,0 +1,17 @@
+// next.config.js
+
+module.exports = {
+    // Other configuration options...
+    generateStaticParams: async () => {
+      // Replace with your logic to generate static paths
+      return {
+        paths: {
+          '/': { page: '/' },
+          // Add other pages as needed
+        },
+      };
+    },
+    // Specify the output directory for static export
+    // Note: You might need to adjust this based on your hosting setup
+    distDir: 'out', // Or any other directory name you prefer
+  };
